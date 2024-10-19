@@ -1,0 +1,26 @@
+# configs/config.yaml
+
+data:
+  dataset_path: '../data/anime_dataset/animefacedataset'
+  image_size: 64
+  batch_size: 128
+  num_workers: 4
+  image_channels: 3
+  mean: [0.5, 0.5, 0.5]
+  std: [0.5, 0.5, 0.5]
+
+training:
+  num_epochs: 25
+  learning_rate: 0.0002
+  batch_size: 128
+  latent_dim: 100
+
+model:
+  name: 'dcgan'
+  latent_size: 128
+  feature_d: 64
+  feature_g: 64
+
+sample_dir: 'samples'
+model_dir: 'models'
+
